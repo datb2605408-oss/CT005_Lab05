@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5_Ex3.1 - Hiển thị Nội dung số</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .media-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .media-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nội Dung Đa Phương Tiện</h1>
+
+    <!-- Khối Infographic -->
+    <div class="section">
+        <h2>1. Infographic</h2>
+        <p>Hình ảnh Infographic tổng hợp nội dung kiến thức số.</p>
+        <div class="media-container">
+            <img src="infographic.png" alt="Infographic">
+        </div>
+    </div>
+
+    <!-- Khối Video Youtube Shorts -->
+    <div class="section">
+        <h2>2. Video Youtube</h2>
+        <p>Video minh họa phát trực tiếp từ YouTube Shorts.</p>
+        <div class="media-container video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/n64IeYNJtPk" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Ghi chú bản quyền -->
+    <footer>
+        <p>© 2026 Bản quyền thuộc về tác giả. Mã nguồn được hỗ trợ tạo bởi GitHub Copilot.</p>
+    </footer>
+
+</body>
+</html>
